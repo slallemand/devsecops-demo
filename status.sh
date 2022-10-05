@@ -1,3 +1,5 @@
+#!/bin/bash
+
 printf "\n## GOGS Server - Username/Password: gogs/gogs ##\n"
 GOGS=$(oc get route -n cicd gogs -o jsonpath='{.spec.host}')
 printf "http://$GOGS"
